@@ -1,0 +1,92 @@
+import { motion } from "framer-motion";
+import { ImageIcon, Share2, Zap, BarChart3, Clock, Shield } from "lucide-react";
+
+const features = [
+  {
+    icon: ImageIcon,
+    title: "AI画像自動修正",
+    description: "色調補正、ノイズ除去、解像度アップをAIが自動で実行。プロ品質の画像に仕上げます。",
+  },
+  {
+    icon: Share2,
+    title: "マルチSNS同時投稿",
+    description: "X、Instagram、Facebook、TikTokなど主要SNSへワンクリックで一括投稿。",
+  },
+  {
+    icon: Zap,
+    title: "リアルタイム処理",
+    description: "アップロードから投稿まで数秒。高速なAIパイプラインで待ち時間ゼロ。",
+  },
+  {
+    icon: BarChart3,
+    title: "投稿分析ダッシュボード",
+    description: "エンゲージメント率、リーチ数、最適投稿時間をリアルタイムで分析。",
+  },
+  {
+    icon: Clock,
+    title: "スケジュール投稿",
+    description: "最適な時間にAIが自動判定。予約投稿でリーチを最大化。",
+  },
+  {
+    icon: Shield,
+    title: "セキュアな管理",
+    description: "エンタープライズグレードのセキュリティ。データは暗号化して安全に保管。",
+  },
+];
+
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.1 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+const FeaturesSection = () => (
+  <section className="py-32 relative">
+    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+    
+    <div className="container">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="text-center mb-20"
+      >
+        <span className="font-mono text-sm text-primary tracking-widest uppercase">Features</span>
+        <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
+          すべてを、<span className="gradient-text">自動化</span>する
+        </h2>
+        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          画像の修正からSNS投稿、分析まで。Android 18が全プロセスを自動化します。
+        </p>
+      </motion.div>
+
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        {features.map((f) => (
+          <motion.div
+            key={f.title}
+            variants={item}
+            className="glass rounded-xl p-8 group hover:border-primary/30 transition-all duration-300"
+          >
+            <div className="w-12 h-12 rounded-lg gradient-primary flex items-center justify-center mb-6 group-hover:shadow-[0_0_20px_hsl(185_80%_55%/0.3)] transition-shadow">
+              <f.icon className="w-6 h-6 text-background" />
+            </div>
+            <h3 className="text-xl font-semibold mb-3">{f.title}</h3>
+            <p className="text-muted-foreground leading-relaxed">{f.description}</p>
+          </motion.div>
+        ))}
+      </motion.div>
+    </div>
+  </section>
+);
+
+export default FeaturesSection;
