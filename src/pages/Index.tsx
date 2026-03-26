@@ -4,17 +4,17 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import CTASection from "@/components/CTASection";
 
 const Index = () => (
-  <div className="min-h-screen bg-background">
+  <div className="min-h-screen gradient-bg">
     {/* Navbar */}
     <nav className="fixed top-0 inset-x-0 z-50 glass">
       <div className="container flex items-center justify-between h-16">
-        <span className="text-xl font-bold gradient-text">Android 18</span>
-        <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-          <a href="#features" className="hover:text-foreground transition-colors">機能</a>
-          <a href="#how" className="hover:text-foreground transition-colors">使い方</a>
-          <a href="#pricing" className="hover:text-foreground transition-colors">料金</a>
+        <span className="text-xl font-extrabold gradient-text">🎀 Android 18</span>
+        <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-muted-foreground">
+          <a href="#features" className="hover:text-primary transition-colors">機能</a>
+          <a href="#how" className="hover:text-primary transition-colors">使い方</a>
+          <a href="#pricing" className="hover:text-primary transition-colors">料金</a>
         </div>
-        <button className="gradient-primary px-5 py-2 rounded-lg text-sm font-semibold text-background hover:scale-105 transition-transform">
+        <button className="gradient-primary px-5 py-2 rounded-full text-sm font-bold text-primary-foreground hover:scale-105 transition-transform">
           無料で始める
         </button>
       </div>
@@ -32,7 +32,7 @@ const Index = () => (
     {/* Footer */}
     <footer className="border-t border-border/50 py-12">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-        <span className="font-semibold gradient-text">Android 18</span>
+        <span className="font-extrabold gradient-text">🎀 Android 18</span>
         <p>© 2026 Android 18. All rights reserved.</p>
       </div>
     </footer>
