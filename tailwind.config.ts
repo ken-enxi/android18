@@ -13,7 +13,7 @@ export default {
       },
     },
     fontFamily: {
-      sans: ["Space Grotesk", "system-ui", "sans-serif"],
+      sans: ["Nunito", "system-ui", "sans-serif"],
       mono: ["JetBrains Mono", "monospace"],
     },
     extend: {
