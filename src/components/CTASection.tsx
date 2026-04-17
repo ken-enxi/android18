@@ -16,7 +16,7 @@ const CTASection = () => (
           今すぐ Android 18 を体験
         </h2>
         <p className="text-primary-foreground/85 text-lg max-w-xl mx-auto mb-10 relative z-10 leading-relaxed">
-          無料プランで全機能をお試しいただけます。クレジットカード不要。
+          無料プランで全機能をお試しいただけます。
         </p>
         <a
           href="https://frontend-production-dc8f.up.railway.app/"

@@ -107,7 +107,7 @@ const PricingSection = () => (
       </div>
 
       <p className="text-center text-xs text-muted-foreground mt-10 tracking-wide">
-        14日間の無料トライアル付き · クレジットカード不要 · いつでもキャンセル可能
+        14日間の無料トライアル付き · いつでもキャンセル可能
       </p>
     </div>
   </section>
