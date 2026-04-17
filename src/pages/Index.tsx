@@ -32,7 +32,7 @@ const Index = () => (
     {/* Footer */}
     <footer className="border-t border-border/50 py-12">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-        <span className="font-extrabold gradient-text">🎀 Android 18</span>
+        <span className="font-serif font-semibold tracking-refined gradient-text">Android 18</span>
         <p>© 2026 Android 18. All rights reserved.</p>
       </div>
     </footer>
