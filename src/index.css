@@ -2,44 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @layer base {
   :root {
-    --background: 330 30% 97%;
-    --foreground: 280 30% 15%;
+    --background: 30 20% 97%;
+    --foreground: 340 15% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 280 30% 15%;
+    --card-foreground: 340 15% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 280 30% 15%;
+    --popover-foreground: 340 15% 18%;
 
-    --primary: 330 70% 65%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 345 35% 55%;
+    --primary-foreground: 30 20% 98%;
 
-    --secondary: 170 50% 85%;
-    --secondary-foreground: 280 30% 20%;
+    --secondary: 25 25% 90%;
+    --secondary-foreground: 340 20% 25%;
 
-    --muted: 330 20% 92%;
-    --muted-foreground: 280 15% 45%;
+    --muted: 30 15% 93%;
+    --muted-foreground: 340 8% 45%;
 
-    --accent: 260 60% 70%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 320 18% 60%;
+    --accent-foreground: 30 20% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 30 20% 98%;
 
-    --border: 330 20% 88%;
-    --input: 330 20% 88%;
-    --ring: 330 70% 65%;
+    --border: 30 15% 86%;
+    --input: 30 15% 86%;
+    --ring: 345 35% 55%;
 
-    --radius: 1rem;
+    --radius: 0.5rem;
 
-    --glow-primary: 330 70% 65%;
-    --glow-secondary: 260 60% 70%;
-    --glow-tertiary: 170 50% 70%;
-    --surface-glass: 0 0% 100%;
+    --glow-primary: 345 35% 55%;
+    --glow-secondary: 320 18% 60%;
+    --glow-tertiary: 25 30% 75%;
+    --surface-glass: 30 20% 99%;
   }
 }
 
@@ -75,6 +75,9 @@
     background-clip: text;
   }
   .gradient-bg {
-    background: linear-gradient(135deg, hsl(330 30% 97%), hsl(260 30% 95%), hsl(170 30% 95%));
+    background: linear-gradient(135deg, hsl(30 20% 97%), hsl(345 20% 95%), hsl(25 25% 94%));
+  }
+  .tracking-refined {
+    letter-spacing: 0.02em;
   }
 }

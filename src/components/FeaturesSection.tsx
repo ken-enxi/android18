@@ -59,11 +59,11 @@ const FeaturesSection = () => (
         viewport={{ once: true }}
         className="text-center mb-20"
       >
-        <span className="font-mono text-sm text-primary tracking-widest uppercase font-semibold">✨ Features</span>
-        <h2 className="text-4xl md:text-5xl font-extrabold mt-4 mb-6">
+        <span className="font-mono text-xs text-primary tracking-[0.3em] uppercase font-medium">Features</span>
+        <h2 className="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-6 tracking-refined">
           すべてを、<span className="gradient-text">自動化</span>する
         </h2>
-        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+        <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
           画像の修正からSNS投稿、分析まで。Android 18が全プロセスを自動化します。
         </p>
       </motion.div>
@@ -84,8 +84,8 @@ const FeaturesSection = () => (
             <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${f.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
               <f.icon className="w-6 h-6 text-primary-foreground" />
             </div>
-            <h3 className="text-xl font-bold mb-3">{f.title}</h3>
-            <p className="text-muted-foreground leading-relaxed">{f.description}</p>
+            <h3 className="text-xl font-serif font-semibold mb-3 tracking-refined">{f.title}</h3>
+            <p className="text-muted-foreground leading-relaxed text-sm">{f.description}</p>
           </motion.div>
         ))}
       </motion.div>

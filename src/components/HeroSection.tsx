@@ -16,24 +16,24 @@ const HeroSection = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="inline-block font-mono text-sm tracking-widest text-primary mb-6 uppercase font-semibold">
-            ✨ AI-Powered Automation
+          <span className="inline-block font-mono text-xs tracking-[0.3em] text-primary mb-6 uppercase font-medium">
+            AI-Powered Automation
           </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.05] mb-6">
+          <h1 className="text-5xl md:text-7xl font-serif font-semibold leading-[1.05] mb-6 tracking-refined">
             <span className="gradient-text">Android 18</span>
           </h1>
-          <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed mb-4 font-bold">
+          <p className="text-xl md:text-2xl text-foreground/85 leading-relaxed mb-4 font-medium">
             自動画像修正 × SNS自動投稿
           </p>
-          <p className="text-muted-foreground text-lg max-w-lg mb-10">
+          <p className="text-muted-foreground text-base md:text-lg max-w-lg mb-10 leading-relaxed">
             AIが画像を自動で最適化し、複数のSNSプラットフォームへ
-            ワンクリックで同時投稿。あなたの発信を、次のレベルへ。
+            ワンクリックで同時投稿。あなたの発信を、洗練された次のステージへ。
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="gradient-primary px-8 py-4 rounded-full font-bold text-primary-foreground text-lg transition-all hover:scale-105 hover:shadow-[0_0_30px_hsl(330_70%_65%/0.3)]">
-              🎀 無料で始める
+            <button className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium text-base transition-all hover:bg-primary/90 hover:shadow-[0_8px_24px_hsl(345_35%_55%/0.25)]">
+              無料で始める
             </button>
-            <button className="glass px-8 py-4 rounded-full font-bold text-foreground text-lg transition-all hover:border-primary/50">
+            <button className="glass px-8 py-4 rounded-full font-medium text-foreground text-base transition-all hover:border-primary/50">
               デモを見る
             </button>
           </div>
@@ -65,17 +65,17 @@ const HeroSection = () => (
 
             {/* After - Instagram style */}
             <div className="relative w-full max-w-md">
-              <div className="absolute -top-3 left-4 z-10 gradient-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">
-                ✨ After
+              <div className="absolute -top-3 left-4 z-10 bg-primary text-primary-foreground text-xs font-medium tracking-widest px-3 py-1 rounded-full uppercase">
+                After
               </div>
-              <div className="glow-box rounded-2xl overflow-hidden border-2 border-primary/30 shadow-2xl bg-background">
+              <div className="glow-box rounded-2xl overflow-hidden border border-primary/20 shadow-2xl bg-background">
                 {/* Instagram Header */}
                 <div className="flex items-center gap-3 px-4 py-3 border-b border-border/50">
-                  <div className="w-8 h-8 rounded-full gradient-primary flex items-center justify-center text-primary-foreground text-xs font-bold">
-                    🎀
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-primary-foreground text-xs font-semibold">
+                    P
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-bold text-foreground">patisserie_sakura</p>
+                    <p className="text-sm font-semibold text-foreground">patisserie_sakura</p>
                     <p className="text-xs text-muted-foreground">東京・表参道</p>
                   </div>
                   <span className="text-muted-foreground text-lg">•••</span>
