@@ -15,9 +15,14 @@ const Index = () => (
           <a href="#how" className="hover:text-primary transition-colors">使い方</a>
           <a href="#pricing" className="hover:text-primary transition-colors">料金</a>
         </div>
-        <button className="bg-primary text-primary-foreground px-5 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors">
+        <a
+          href="https://frontend-production-dc8f.up.railway.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-primary text-primary-foreground px-5 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors"
+        >
           無料で始める
-        </button>
+        </a>
       </div>
     </nav>
 

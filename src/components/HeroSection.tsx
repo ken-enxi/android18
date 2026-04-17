@@ -30,9 +30,14 @@ const HeroSection = () => (
             ワンクリックで同時投稿。あなたの発信を、洗練された次のステージへ。
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium text-base transition-all hover:bg-primary/90 hover:shadow-[0_8px_24px_hsl(345_35%_55%/0.25)]">
+            <a
+              href="https://frontend-production-dc8f.up.railway.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium text-base transition-all hover:bg-primary/90 hover:shadow-[0_8px_24px_hsl(345_35%_55%/0.25)]"
+            >
               無料で始める
-            </button>
+            </a>
             <button className="glass px-8 py-4 rounded-full font-medium text-foreground text-base transition-all hover:border-primary/50">
               デモを見る
             </button>

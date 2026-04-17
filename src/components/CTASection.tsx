@@ -18,9 +18,14 @@ const CTASection = () => (
         <p className="text-primary-foreground/85 text-lg max-w-xl mx-auto mb-10 relative z-10 leading-relaxed">
           無料プランで全機能をお試しいただけます。クレジットカード不要。
         </p>
-        <button className="bg-primary-foreground text-primary px-10 py-4 rounded-full font-medium text-base transition-all hover:shadow-lg relative z-10">
+        <a
+          href="https://frontend-production-dc8f.up.railway.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-primary-foreground text-primary px-10 py-4 rounded-full font-medium text-base transition-all hover:shadow-lg relative z-10"
+        >
           無料アカウントを作成
-        </button>
+        </a>
       </motion.div>
     </div>
   </section>
