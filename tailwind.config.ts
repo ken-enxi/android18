@@ -13,7 +13,8 @@ export default {
       },
     },
     fontFamily: {
-      sans: ["Nunito", "system-ui", "sans-serif"],
+      sans: ["Inter", "system-ui", "sans-serif"],
+      serif: ["Playfair Display", "Georgia", "serif"],
       mono: ["JetBrains Mono", "monospace"],
     },
     extend: {
